@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>銀河系資訊有限公司</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+            background: white;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            flex: 1 1 calc(33.33% - 40px);
+            background: #ecf0f1;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        @media (max-width: 768px) {
+            .card {
+                flex: 1 1 calc(100% - 40px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>銀河系資訊有限公司</h1>
+        <p>您的科技夥伴，開創未來</p>
+    </header>
+    <nav>
+        <a href="#about">公司簡介</a>
+        <a href="#services">服務介紹</a>
+        <a href="#contact">聯絡我們</a>
+    </nav>
+    <section id="about">
+        <h2>公司簡介</h2>
+        <p>銀河系資訊有限公司成立於 2020 年，是一家專注於提供創新 IT 解決方案的領先企業。我們的專業團隊致力於開發和實施技術方案，幫助企業提高效率並開創新機遇。</p>
+    </section>
+    <section id="services">
+        <h2>服務介紹</h2>
+        <div class="container">
+            <div class="card">
+                <h3>軟體開發</h3>
+                <p>從概念設計到產品交付，我們提供完整的軟體開發解決方案。</p>
+            </div>
+            <div class="card">
+                <h3>雲端服務</h3>
+                <p>為企業提供安全、可靠的雲端基礎架構服務。</p>
+            </div>
+            <div class="card">
+                <h3>網路安全</h3>
+                <p>保障您的數據和業務免受網絡威脅。</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>聯絡我們</h2>
+        <p>地址：台北市中正區科技路 123 號</p>
+        <p>電話：+886-2-1234-5678</p>
+        <p>Email：info@galaxytech.com</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 銀河系資訊有限公司. 版權所有.</p>
+    </footer>
+</body>
+</html>
