@@ -555,37 +555,37 @@ if (typeof getCookieItem === 'function' && (getCookieItem('__strk_cookie_eu_visi
 <script>
   window.pingpp = {}
 </script>
-<script>
-  // In order to load the page faster on mobile, render page-site-bundle
-  if(window.innerWidth <= 727) {
-    window.ssrIsLoaded = false
-  }
-  
-  function downloadJSAtOnload(link, callback) {
-    var element = document.createElement("script");
-    element.src = link;
-    document.body.appendChild(element);
-    element.onload = function() {
-      callback && callback();
-    }
-  }
-  
-  function loadScript(sourceLink) {
-    if (!window.ssrIsLoaded && false && window.siteConfigSrc) {
-      downloadJSAtOnload(window.siteConfigSrc, function() {
-        downloadJSAtOnload(sourceLink);
-      });
-    } else {
-      downloadJSAtOnload(sourceLink);
-    }
-  }
-  
-  var sourceLink = "https://static-assets.strikinglycdn.com/webpack/lightBoostedPage-site-bundle.7ba63b38bcd15c2965dc.js"
-  if (!window.ssrIsLoaded) {
-    sourceLink = "https://static-assets.strikinglycdn.com/webpack/page-site-bundle.b07473e5feea59f6ac5f.js"
-  }
-  loadScript(sourceLink)
-</script>
+#<script>
+#  // In order to load the page faster on mobile, render page-site-bundle
+#  if(window.innerWidth <= 727) {
+#    window.ssrIsLoaded = false
+#  }
+#  
+#  function downloadJSAtOnload(link, callback) {
+#    var element = document.createElement("script");
+#    element.src = link;
+#    document.body.appendChild(element);
+#    element.onload = function() {
+#      callback && callback();
+#   }
+# }
+ # 
+ # function loadScript(sourceLink) {
+ #   if (!window.ssrIsLoaded && false && window.siteConfigSrc) {
+ #     downloadJSAtOnload(window.siteConfigSrc, function() {
+ #       downloadJSAtOnload(sourceLink);
+ #     });
+ #   } else {
+ #     downloadJSAtOnload(sourceLink);
+ #   }
+ # }
+  #
+#  var sourceLink = "https://static-assets.strikinglycdn.com/webpack/lightBoostedPage-site-bundle.7ba63b38bcd15c2965dc.js"
+# if (!window.ssrIsLoaded) {
+#    sourceLink = "https://static-assets.strikinglycdn.com/webpack/page-site-bundle.b07473e5feea59f6ac5f.js"
+#  }
+# loadScript(sourceLink)
+#</script>
 <script>
   window.addEventListener('DOMContentLoaded', function() {
     if (window._) {
