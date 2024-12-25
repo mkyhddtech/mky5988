@@ -3,70 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="銀河系資訊有限公司，提供網路規劃、整合服務與網路安全，為政府機關與企業提供專業解決方案。">
+    <meta name="keywords" content="銀河系資訊, 系統整合, 網路規劃, 網路安全, 台中科技公司">
     <title>銀河系資訊有限公司</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav {
-            background-color: #34495e;
-            padding: 0.5rem;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 2rem;
-            max-width: 1200px;
-            margin: auto;
-            background: white;
-            margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            text-align: center;
-            background-color: #2c3e50;
-            color: white;
-            padding: 1rem;
-            margin-top: 20px;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .card {
-            flex: 1 1 calc(33.33% - 40px);
-            background: #ecf0f1;
-            padding: 1rem;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .card h3 {
-            margin-top: 0;
-        }
-        @media (max-width: 768px) {
-            .card {
-                flex: 1 1 calc(100% - 40px);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -80,7 +20,8 @@
     </nav>
     <section id="about">
         <h2>公司簡介</h2>
-        <p>銀河系數位國際是一家位於臺中市的科技公司，致力於系統整合的研究、規劃、安裝、施工及維護。我們專注服務政府機關、教育單位及民間企業，提供專業的整合方案，以滿足客戶的需求。無論是系統規劃還是技術支援，我們都以高效和可靠的方式為客戶創造價值。</p>
+        <p>銀河系數位國際是一家位於臺中市的科技公司，致力於系統整合的研究、規劃、安裝、施工及維護。我們專注服務政府機關、教育單位及民間企業，提供專業的整合方案，以滿足客戶的需求。</p>
+        <img src="images/company.jpg" alt="公司簡介圖片" style="width:100%; border-radius:10px;">
     </section>
     <section id="services">
         <h2>服務介紹</h2>
@@ -88,14 +29,17 @@
             <div class="card">
                 <h3>網路規劃</h3>
                 <p>從架構設計到佈線施工，提供優質的服務。</p>
+                <img src="images/network.jpg" alt="網路規劃">
             </div>
             <div class="card">
                 <h3>整合服務</h3>
                 <p>為客戶提供客製化的軟硬體整合規劃。</p>
+                <img src="images/integration.jpg" alt="整合服務">
             </div>
             <div class="card">
                 <h3>網路安全</h3>
                 <p>保障您的數據和業務免受網絡威脅。</p>
+                <img src="images/security.jpg" alt="網路安全">
             </div>
         </div>
     </section>
@@ -103,7 +47,7 @@
         <h2>聯絡我們</h2>
         <p>地址：台中市西區忠明南路303號5F-2</p>
         <p>電話：+886-4-23055988</p>
-        <p>Email：wagner@mky5988.com.tw</p>
+        <p>Email：<a href="mailto:wagner@mky5988.com.tw">wagner@mky5988.com.tw</a></p>
     </section>
     <footer>
         <p>&copy; 2024 銀河系資訊有限公司. 版權所有。</p>
